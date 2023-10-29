@@ -10,7 +10,7 @@ let rec log2 n p =
   if n <= 1 then p
   else log2 (n / 2) (p + 1);;
 
-(** Renvoie la puissance de 2 suivante *)
+(** Return next power of 2*)
 let next_power_of_2 n =
   1 lsl (log2 n 0 + 1);;
 
